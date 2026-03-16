@@ -1,13 +1,13 @@
 ReMu is a firmware architecture for data plane emualtion with containered nodes. 
-1.Introduction to overall platform
+## 1.Introduction to overall platform
 platform：hardware：Xilinx Alveo U250 software：Python（need： ） OVS（）、DPDK（）
-2.Components of data plane emulator 
+## 2.Components of data plane emulator 
 Link emulator
 Traffic manager
 Switch emulator
-3.Configurations of redircting software switch
+## 3.Configurations of redircting software switch
 DPDK accelerates the port connecting to FPGA card. 
-4.Functions of orchestrator
+## 4.Functions of orchestrator
 ReMu Orchestrator takes charge of creating nodes managing OVS connections and sending configuration packets to data plane emulator. 
 
 
