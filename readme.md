@@ -10,6 +10,17 @@ Traffic manager: The Traffic Manager shapes traffic with virtual depareture time
 
 Switch Emulator: The Switch Emulator consists of Switch Tables (STs) and a Connection Table (CT) to mimic L2/L3 operations on packets
 
+PHV Format： The metadata of PHV traverse through stages follows the format like:
+255       240 239   232 231                 88 87         64 63         49 48      33 32                 1   0
+  +-----------+---------+----------------------+-------------+-------------+----------+--------------------+---+
+  |           |         |                      |             |             |          |                    | l |
+  |  flow_id  |  link_  |       Reserved       |  port_info  |  Reserved   | pkt_len  |  scheduling_time   | o |
+  |           |  model  |                      |             |             |          |                    | s |
+  |           |         |                      |             |             |          |                    | s |
+  +-----------+---------+----------------------+-------------+-------------+----------+--------------------+---+
+  16 bit       8 bit          144 bit             24 bit        15 bit       16 bit          32 bit       1 bit
+    2B          1B             18B                 3B                       2B                4B
+
 ## 3.Configurations of redircting software switch
 The configuration of the redirecting software switch is primarily achieved by running a script before the emulation starts.
 
