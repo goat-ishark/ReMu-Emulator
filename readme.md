@@ -33,5 +33,5 @@ The configuration of the redirecting software switch is primarily achieved by ru
 ## 4.Functions of orchestrator
 ReMu Orchestrator takes charge of creating nodes managing OVS connections and sending configuration packets to data plane emulator. 
 
-## 5.Running ReMu
+## 5.Get Started with ReMu
 Users can define network topologies and link models via JSON configuration files. A  Python script then initializes the emulation environment and generates  performance reports.
